@@ -378,7 +378,7 @@ class Parser {
     skipSpace(src);
     if (frag.str == FUNCTION) return parseFunction(src, seps);
     else if (frag.str == VAR) return parseVar(src, seps, false);
-    else if (frag.str == CONST) return parseVar(src, seps, true);
+    else if (frag.str == kCONST ) return parseVar(src, seps, true);
     else if (frag.str == RETURN) return parseReturn(src, seps);
     else if (frag.str == IF) return parseIf(src, seps);
     else if (frag.str == DO) return parseDo(src, seps);
